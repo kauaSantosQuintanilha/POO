@@ -8,7 +8,7 @@ public class Main {
         //tipo nome;
         //criar um objeto filme
         Filme meuFilme=new Filme();
-        //monstrar o endereço de memoria
+        //monstrar o endereço de memoria *
         meuFilme.lerDados();
         System.out.println("******dados do filme******");
        meuFilme.imprimirDados();
