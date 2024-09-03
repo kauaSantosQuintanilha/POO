@@ -6,7 +6,7 @@ public class Main {
         // Tipo nomedoObjeto=new Tipo();
         Carro meuCarro = new Carro();
         meuCarro.lerDados();
-        System.out.println("\n ******dados do filme******");
+        System.out.println("\n ******dados do carro******");
         meuCarro.imprimirDados();
         meuCarro.ligarCarro();
     }
