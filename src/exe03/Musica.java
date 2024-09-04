@@ -19,6 +19,7 @@ public class Musica {
         System.out.println("ano de lancamento"+anolancamento);
         System.out.println("avaliação"+avaliacao);
         System.out.println("numero de avaliação:"+numAvaliacao);
+        System.out.println("média:"+media);
 
 
     }

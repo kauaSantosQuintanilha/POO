@@ -5,6 +5,5 @@ public class Main {
      Musica minhamusica= new Musica();
      minhamusica.lerDados();
      minhamusica.exibirFichaTecnica();
-
     }
 }
