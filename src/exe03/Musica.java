@@ -9,15 +9,17 @@ public class Musica {
     int anolancamento;
     double avaliacao;
     double numAvaliacao;
+    double somatoriodeAvaliacoes;
     double media;
 
-    public void imprimirDados(){
+
+    public void exibirFichaTecnica(){
         System.out.println("titulo da música:"+titulomusica);
         System.out.println("artista da música:"+artista);
         System.out.println("ano de lancamento"+anolancamento);
         System.out.println("avaliação"+avaliacao);
         System.out.println("numero de avaliação:"+numAvaliacao);
-        System.out.println("média da avaliacao"+media);
+
 
     }
     public  void lerDados(){
@@ -31,8 +33,13 @@ public class Musica {
         anolancamento =leia.nextInt();
         System.out.println("digite a avaliacao da música:");
         avaliacao= leia.nextDouble();
-        System.out.println("digite numeros de avaliacões da musica:");
-        numAvaliacao= leia.nextDouble();
+       atualizamedia(avaliacao);
     }
+    public  void  atualizamedia(double avaliacao){
+        numAvaliacao++;
+        somatoriodeAvaliacoes=somatoriodeAvaliacoes + avaliacao;
+        media=somatoriodeAvaliacoes/numAvaliacao;
+
+}
 }
 
