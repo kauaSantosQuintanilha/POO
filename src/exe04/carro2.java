@@ -5,38 +5,41 @@ import java.util.Scanner;
 public class carro2 {
     String nome;
     String modelo;
-    int ano;
+    int anodefabricacao;
     String cor;
     double idadedocarro;
+    double anoAtual;
 
     public void ligarCarro(){
-        System.out.println("Carro ligado!!!");
+
 
     }
     public void fichaTecnica() {
         // imprimir todos os dados do filme
         System.out.println("Nome:" + nome);
         System.out.println("modelo:" + modelo);
-        System.out.println("ano:" + ano);
+        System.out.println("ano:" +anodefabricacao);
         System.out.println("cor:" + cor);
-        idadedocarro=2024-ano;
-        System.out.println("a idade do carro é:"+idadedocarro);
+        idadedocarro=anoAtual-anodefabricacao;
+        System.out.println("a idade do carro é:"+idadedocarro+" anos");
 
 
 
 
     }
-    public  void lerDados(){
+    public  void calcularIdadedoCarro(){
         Scanner leia=new Scanner(System.in);
         System.out.println("--------------\n");
         System.out.println("digite o nome do carro:");
         nome=leia.nextLine();
         System.out.println("digite o modelo do carro:");
         modelo =leia.next();
-        System.out.println("digite o ano:");
-        ano=leia.nextInt();
+        System.out.println("digite o ano do carro:");
+        anodefabricacao=leia.nextInt();
         System.out.println("digite a cor :");
         cor = leia.next();
+        System.out.println("digite o ano atual:");
+        anoAtual= leia.nextDouble();
 
     }
 }
