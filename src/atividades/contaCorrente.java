@@ -1,15 +1,14 @@
 package atividades;
 
 public class contaCorrente {
-    {
 
-    }
-    double saldo=200;
+    double saldo;
     String titular;
-    double limite=100;
-    double valor=201;
+    double limite;
+    double valor;
 
     public  void sacar(){
+
        if (valor<=saldo && valor<=limite){
            System.out.println("saque  autorizado");
 
