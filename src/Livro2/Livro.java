@@ -23,11 +23,6 @@ public class Livro {
     }
 
     public void exibirDetalhes() {
-     Scanner ler=new Scanner(System.in);
-        System.out.println("titulo:");
-        titulo= ler.next();
-        System.out.println("autor:");
-        autor= ler.next();
         System.out.println("titulo"+titulo);
         System.out.println("autor"+titulo);
 
